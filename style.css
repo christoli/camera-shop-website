@@ -38,7 +38,7 @@ section{
 }
 
 .container{
-    width: 80%;
+    width: 73%;
     margin: 0 auto;
 }
 
@@ -46,13 +46,43 @@ img{
     width: 100%;
 }
 
+h1{
+    font-size: 2.8rem;
+}
+
+h2{
+    font-size: 2.6rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+h5{
+    font-size: 0.86rem;
+}
+
+p{
+    line-height: 1.7;
+}
+
 .btn{
-    padding: 1.2rem 3rem;
-    font-size: 1rem;
+    padding: 1.2rem 2.3rem;
+    font-size: 1.15rem;
     background-color: var(--color-white);
     color: var(--color-dark);
+    display: inline-block;
     margin: 1.3rem 0;
     transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--color-dark);
+    color: var(--color-white);
 }
 
 .btn-primary{
@@ -164,4 +194,154 @@ nav .container .sign-field{
 nav .container .sign-field a:first-child{
     margin-right: 5rem;
     color: var(--color-dark);
+}
+
+/* Header Section */
+.header{
+    background: url(images/banner.png);
+}
+
+section.header .container{
+    width: 95%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+section.header{
+    padding: 4rem 0 3rem;
+}
+
+.header-left{
+    flex-basis: 60%;
+}
+
+.banner-img{  
+    padding-right: 22%;
+}
+
+.header-left .banner-cta .banner-btn{
+    width: 40%;
+}
+
+.header-left .banner-cta{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-cta .banner-text{
+    padding-left: 12rem;
+    padding-right: 4rem;
+    margin-top: -4.8rem;
+}
+
+/* About Us Section */
+section.about{
+    height: 55rem;
+    background: url(images/about-bg.png);
+    background-size: cover;
+    background-position: 85% 15%;
+    position: relative;
+}
+
+.section-title{
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 8px solid var(--color-primary);
+}
+
+section.about .container .about-cta{
+    position: absolute;
+    bottom: 0.7rem;
+}
+
+section.about .container .about-cta p{
+    padding-right: 30rem;
+}
+
+/* Gallery section */
+section.showcase{
+    background: url(images/gallery-bg.png);
+    background-position: cover;
+}
+
+.slider-container .slides{ 
+    display: flex;
+    gap: 0.5rem;
+}
+
+.left-box .left-box-img img,
+.right-box .right-box-img img{
+    width: 95%;
+}
+
+.left-box .left-box-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.left-box-img .camera-infos{
+    text-align: center;
+    position: absolute;
+    bottom: 4rem;
+}
+
+.left-box-img .camera-infos .camera-name{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.left-box-img .camera-infos .devise,
+.left-box-img .camera-infos .price,
+.right-box-img .camera-infos .devise,
+.right-box-img .camera-infos .price{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.left-box-img .camera-infos .price,
+.right-box-img .camera-infos .price{
+    color: var(--color-primary);
+}
+
+.left-box .slide-cta{
+    padding: 1rem 3rem 1rem 1rem;
+    margin-top: 5rem;
+}
+
+.right-box p{
+    margin-top: 7rem;
+    margin-bottom: 1.4rem;
+    padding: 0 2.3rem 0 1rem;
+}
+
+.right-box .right-box-img{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.right-box-img .camera-infos{
+    position: absolute;
+    bottom: 4rem;
+}
+
+.right-box-img .camera-infos .camera-name{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-white);
+}
+
+.right-box-img .camera-infos .devise{
+    color: var(--color-white);
+}
+
+/* Get in touch */
+section.contact .container h1{
+    text-align: center;
 }
