@@ -142,6 +142,11 @@ nav .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
+}
+
+nav .container span:first-child{
+    display: none;
 }
 
 nav .container .nav-logo{
@@ -153,8 +158,8 @@ nav .container .user-icon{
 }
 
 nav .container ul{
-    width: 40%;
-    text-align: right;
+    width: 60%;
+    text-align: center;
 }
 
 nav .container ul li{
