@@ -39,6 +39,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
+            <span class="material-symbols-sharp" id="menuToggle">menu</span>
             <a href="index.html"><img src="images/logo.png" alt="Logo" class="nav-logo"></a>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -56,5 +57,83 @@
             </div>
         </div>
     </nav>
+
+    <!-- Get In touch -->
+    <section class="contact">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <div class="form-item">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="form-item">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-item">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-item">
+                            <select required>
+                                <option value="" disabled selected hidden>Type Of Camera</option>
+                                <option value="hd-camera">HD Camera</option>
+                                <option value="video-camera">Video Camera</option>
+                                <option value="images">Images</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-message">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-btn">
+                        <button type="submit" class="btn btn-primary-dark">SEND</button>
+                    </div>
+                </form>
+            </div>
+        </div>>
+    </section>
+
+    <!-- Map -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.005797840205!2d1.2134238747960941!3d6.12992092761226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023e1de1e8ffe07%3A0x60b897961dd8728f!2sMonument%20de%20l&#39;independance!5e0!3m2!1sfr!2stg!4v1687954941194!5m2!1sfr!2stg" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+                <img src="images/footer-logo.png" class="footer-logo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+                    rem aliquid nesciunt ex aut minus repudiandae, dolores.
+            </p>
+            <div class="newsletter">
+                <div class="shop-contact">
+                    <a href="#"><img src="images/map-icon.png" class="map"></a>
+                    <a href="#"><img src="images/email-icon.png" class="email"></a>
+                    <a href="#"><img src="images/contact-icon.png" class="phone"></a>
+                </div>
+                <div class="newsletter-form">
+                    <div class="newsletter-title">Newsletter</div>
+                    <form>
+                        <div class="newsletter-form-group">
+                            <input type="text" placeholder="Enter your email">
+                            <button type="submit" class="btn btn-primary btn-subscribe">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="socials">
+                    <a href="#"><img src="images/fb-icon.png"></a>
+                    <a href="#"><img src="images/twitter-icon.png"></a>
+                    <a href="#"><img src="images/instagram-icon.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        Camera Shop | Remade by Christoli
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

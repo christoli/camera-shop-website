@@ -448,7 +448,7 @@ section.contact{
 .footer{
     background: var(--color-dark);
     position: relative;
-    padding: 13rem 0 5.7rem;
+    padding: 13rem 0 2rem;
 }
 
 .footer .container img.footer-logo{
@@ -458,8 +458,10 @@ section.contact{
 }
 .footer .container p{
     text-align: center;
-    padding: 0 18rem;
+    padding: 0 3rem;
     color: var(--color-grey);
+    max-width: 50rem;
+    margin: -2rem auto 0;
 }
 
 .footer .container .newsletter .newsletter-title{
@@ -470,11 +472,12 @@ section.contact{
 }
 
 .footer .container .newsletter{
+    width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     gap: 2.3rem;
-    margin-top: 2.7rem;
+    margin: 2.7rem 0 3rem;
 }
 
 .footer .container .newsletter .newsletter-form{
@@ -526,7 +529,7 @@ section.contact{
 
 /* Media queries for phones */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px){
     h1{
         font-size: 2rem;
     }
@@ -613,8 +616,29 @@ section.contact{
         width: 100%;
         background-color: var(--color-white);
         display: none;
-        transition: var(--transition);
     }
+
+    nav .container ul.menu-display{
+        animation: displayshow 500ms;
+        display: block;
+    }
+
+    @keyframes displayshow {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    /* Form button */
+
+    .form-container form .form-btn button.btn{
+        font-size: 1.1rem;
+        padding: 0.8rem 3.5rem;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 767px) {
 
     /* Header Section*/
 
@@ -623,12 +647,17 @@ section.contact{
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        padding-bottom: 3rem;
     }
 
     section.header .container .header-left,
     section.header .container .header-right{
         text-align: center;
         flex-basis: 100%;
+    }
+
+    section.header .container .header-right{
+        flex-basis: 85%;
     }
 
     section.header .container .header-right img{
@@ -682,7 +711,13 @@ section.contact{
     }
 
     .slider-container .slides{
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-box,
+    .right-box {
+        max-width: 25rem;
     }
 
     .left-box .left-box-img img,
@@ -691,7 +726,7 @@ section.contact{
     }
 
     .left-box-img .camera-infos{
-        bottom: 0.7rem;
+        bottom: 1rem;
     }
 
     .left-box-img .camera-infos .camera-name,
@@ -726,6 +761,7 @@ section.contact{
 
     section.contact .form-container{
         padding: 1.5rem;
+        max-width: 40rem;
     }
 
     .form-container form .form-group{
@@ -738,13 +774,6 @@ section.contact{
         margin-bottom: 1rem;
     }
 
-    .form-container form .form-btn button.btn{
-        font-size: 1.1rem;
-        padding: 0.8rem 3.5rem;
-        margin-bottom: 0;
-        cursor: pointer;
-    }
-
     /* Footer section */
 
     .footer .container img.footer-logo{
@@ -755,12 +784,96 @@ section.contact{
 
     .footer .container p{
         padding: 0;
-        margin-top: -4rem;
-        max-width: 43rem;
+        margin: -4rem auto 0;
+        max-width: 35rem;
     }
 
     .footer .container .newsletter{
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem auto;
         flex-wrap: wrap;
-        max-width: 43rem;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    /* Header Section */
+    section.header .container .banner-cta .banner-btn{
+        display: none;
+    }
+
+    .banner-cta .banner-text{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .banner-cta .banner-text p{
+        margin-top: 0.5rem;
+        line-height: 1.5;
+    }
+
+    .banner-img img{
+        width: 90%;
+        margin-top: -2rem;
+    }
+
+    /* About Us Section */
+
+    section.about{
+        background-position: right 90% bottom 40%;
+    }
+
+    section.about .container .about-cta{
+        bottom: 5rem;
+    }
+
+    section.about .container .about-cta p{
+        padding-right: 15rem;
+    }
+
+    /* Gallery Section */
+
+    .left-box-img .camera-infos,
+    .right-box-img .camera-infos{
+        bottom: 1.3rem;
+    }
+    
+    .left-box-img .camera-infos .camera-name,
+    .right-box-img .camera-infos .camera-name{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+    .left-box-img .camera-infos .devise,
+    .left-box-img .camera-infos .price,
+    .right-box-img .camera-infos .devise,
+    .right-box-img .camera-infos .price{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    /* Get in touch */
+
+    section.contact .form-container{
+        padding: 2rem;
+        max-width: 50rem;
+    }
+
+    /* Footer section */
+
+    .footer .container img.footer-logo{
+        width: 130px;
+        top: -4.3rem;
+        left: calc(50% - 4.3rem);
+    }
+
+    .footer .container p{
+        margin-top: -4rem;
+    }
+
+    .footer .container .newsletter{
+        margin-bottom: 3rem;
+    }
+
 }
